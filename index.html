@@ -7,12 +7,37 @@
 	
 	<style>
 		body {
+            font-family: monospace;
 			margin: 0;
 			overflow: hidden;
 		}
+
+        #controls {
+            position: fixed;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        input {
+            margin-left: 10px;
+        }
 	</style>
 </head>
 <body>
+    <div id="controls" style="display: block">
+        Press <b>c</b> to toggle the controls
+        <br><br>
+        <label><b>n</b><input type="range" id="n" min="1" max="10" value="2"></label>
+        <br>
+        <label><b>d</b><input type="range" id="d" min="2" max="50" value="10"></label>
+        <br>
+        <label><b>w</b><input type="range" id="w" min="20" max="500" value="100"></label>
+        <br>
+        <label><b>f</b><input type="range" id="f" min="5" max="200" value="50"></label>
+        <br>
+        <label><b>r</b><input type="range" id="r" min="2" max="60" value="8"></label>
+    </div>
 	<canvas></canvas>
 </body>
 </html>
